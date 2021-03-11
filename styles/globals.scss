@@ -1,0 +1,59 @@
+$red: #e12061;
+$purple: #4d3ab4;
+$darkpurple: #3d26be;
+$lightred: #f11760;
+@import url("http://fonts.cdnfonts.com/css/monument-extended");
+html,
+body {
+  font-family: "Poppins";
+  background: #eeede8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  background-color: black;
+}
+
+*::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 5px;
+}
+
+*::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 5px;
+}
+
+.red-span {
+  color: $red;
+}
+.monument {
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 400;
+}

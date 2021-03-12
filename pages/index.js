@@ -1,8 +1,10 @@
 import Head from "next/head";
 import styled from "styled-components";
-import About from "../components/About";
-import Hampers from "../components/Hampers";
-import Retailers from "../components/Retailers";
+import About from "../components/Landing/About";
+import Hampers from "../components/Landing/Hampers";
+import Retailers from "../components/Landing/Retailers";
+import Testimonies from "../components/Landing/Testimonies";
+import Contact from "../components/Landing/Contact";
 export default function Home() {
   return (
     <div>
@@ -25,6 +27,8 @@ export default function Home() {
       <About />
       <Hampers />
       <Retailers />
+      <Testimonies />
+      <Contact />
     </div>
   );
 }
@@ -60,7 +64,25 @@ const HeroWrapper = styled.nav`
     }
     h1 {
       margin: 0;
-      font-size: 3.2rem;
+      font-size: 3.5vw;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    padding: 4rem 0;
+    grid-template-columns: 1fr;
+    img {
+      height: 40vh;
+    }
+    .hero-info {
+      width: 90%;
+      margin: auto;
+      .hero-button {
+        margin: 2rem 0;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 `;

@@ -16,6 +16,9 @@ function Navbar() {
           <a href="#home">About</a>
           <a href="#home">Contact</a>
         </div>
+        <div className="burger">
+          <a href="#">Burger</a>
+        </div>
       </nav>
     </NavWrapper>
   );
@@ -46,5 +49,18 @@ const NavWrapper = styled.nav`
     h2 {
       font-weight: 400;
     }
+    .burger{
+      display:none;
+    }
   }
+  @media only screen and (max-width: 600px) {
+   nav{
+     .nav-links{
+       display:none;
+     }
+     .burger{
+       display:block;
+       margin-left:auto;
+     }
+   }
 `;

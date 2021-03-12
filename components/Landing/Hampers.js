@@ -85,4 +85,23 @@ const HamperWrapper = styled.div`
     border-radius: 1rem;
     cursor: pointer;
   }
+  @media only screen and (max-width: 600px) {
+    .hamper-container {
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 90%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 50px;
+      .hamper {
+        padding: 2rem;
+
+        img {
+          width: 150px;
+          height: 150px;
+          margin: 0;
+        }
+      }
+    }
+  }
 `;

@@ -19,7 +19,7 @@ function About() {
             return (
               <div className="info" key={index}>
                 <img src="./images/Green-Check-Box.png" alt="box" />
-                {info}
+                <p>{info}</p>
               </div>
             );
           })}
@@ -52,7 +52,8 @@ const AboutWrapper = styled.div`
   .info {
     display: flex;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-weight: 300;
     margin: 1rem 0;
     align-items: center;
     img {
@@ -65,6 +66,18 @@ const AboutWrapper = styled.div`
     justify-content: flex-end;
     img {
       display: block;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 0 4rem 0;
+    .about-container {
+      width: 90%;
+      grid-template-columns: 1fr;
+    }
+    .about-image-container {
+      img {
+        width: 100%;
+      }
     }
   }
 `;

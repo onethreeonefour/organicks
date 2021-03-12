@@ -77,4 +77,26 @@ const RetailersWrapper = styled.div`
     border-radius: 1rem;
     cursor: pointer;
   }
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    width: 90%;
+    display: block;
+    margin: auto;
+    .retail-info-container {
+      width: 100%;
+      margin: auto;
+      .retailers-images {
+        gap: 1rem;
+        overflow-x: scroll;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+    .retail-image-container {
+      img {
+        margin-top: 2rem;
+        max-height: 50vh;
+      }
+    }
+  }
 `;

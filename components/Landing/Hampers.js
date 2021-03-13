@@ -21,9 +21,7 @@ function Hampers() {
   return (
     <HamperWrapper id="hampers">
       <h1>Our Hampers</h1>
-      <p>
-        <strong>Handpicked hampers only available at selected retailers</strong>
-      </p>
+      <h3>Handpicked hampers only available at selected retailers</h3>
       <div className="hamper-container">
         {Hamper.map((el, index) => {
           return (
@@ -45,7 +43,7 @@ function Hampers() {
 export default Hampers;
 const HamperWrapper = styled.div`
   padding: 4rem 0;
-  background: #f11760;
+  background: #dd074e;
   text-align: center;
   color: white;
   display: flex;
@@ -62,7 +60,7 @@ const HamperWrapper = styled.div`
     width: 80%;
 
     .hamper {
-      background: #bc134d;
+      background: #9e1243;
       box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.3);
       padding: 3rem 2rem 4rem 2rem;
       border-radius: 1rem;
@@ -75,7 +73,7 @@ const HamperWrapper = styled.div`
         border-radius: 50%;
         margin-top: -175px;
         border: 10px solid;
-        border-color: #bc134d;
+        border-color: #9e1243;
       }
     }
   }

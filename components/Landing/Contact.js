@@ -24,12 +24,12 @@ function Contact() {
         <div className="contact-form">
           <h2>Contact Organicks</h2>
           <form action="post">
-            <label htmlFor="Name">Name</label>
-            <input type="text" />
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" />
             <label htmlFor="email">Email</label>
-            <input type="email" />
-            <label htmlFor="Name">Enquiry</label>
-            <textarea type="text" rows="8" cols="50" />
+            <input type="email" name="email" />
+            <label htmlFor="enquiry">Enquiry</label>
+            <textarea type="text" rows="8" cols="50" name="enquiry" />
             <a href="#" className="button">
               Submit
             </a>

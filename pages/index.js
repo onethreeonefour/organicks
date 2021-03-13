@@ -58,7 +58,7 @@ const HeroWrapper = styled.nav`
       cursor: pointer;
     }
     span {
-      color: #918d8d;
+      color: #313131;
       text-transform: uppercase;
       font-weight: 600;
     }

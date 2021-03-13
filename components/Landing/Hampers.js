@@ -21,7 +21,9 @@ function Hampers() {
   return (
     <HamperWrapper id="hampers">
       <h1>Our Hampers</h1>
-      <p>Handpicked hampers only available at selected retailers</p>
+      <p>
+        <strong>Handpicked hampers only available at selected retailers</strong>
+      </p>
       <div className="hamper-container">
         {Hamper.map((el, index) => {
           return (
@@ -50,6 +52,7 @@ const HamperWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .hamper-container {
     margin-top: 200px;
     display: flex;

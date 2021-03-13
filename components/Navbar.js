@@ -49,18 +49,19 @@ const NavWrapper = styled.nav`
     h2 {
       font-weight: 400;
     }
-    .burger{
-      display:none;
+    .burger {
+      display: none;
     }
   }
   @media only screen and (max-width: 600px) {
-   nav{
-     .nav-links{
-       display:none;
-     }
-     .burger{
-       display:block;
-       margin-left:auto;
-     }
-   }
+    nav {
+      .nav-links {
+        display: none;
+      }
+      .burger {
+        display: none;
+        margin-left: auto;
+      }
+    }
+  }
 `;

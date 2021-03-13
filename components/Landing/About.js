@@ -68,11 +68,37 @@ const AboutWrapper = styled.div`
       display: block;
     }
   }
-  @media only screen and (max-width: 600px) {
-    padding: 0 0 4rem 0;
+  @media only screen and (max-width: 5120px) {
+    .about-container {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 3840px) {
+    .about-container {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 2560px) {
+    .about-container {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 1920px) {
+    .about-container {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
     .about-container {
       width: 90%;
       grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0 0 4rem 0;
+    .about-container {
+      width: 90%;
     }
     .about-image-container {
       img {

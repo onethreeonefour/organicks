@@ -32,14 +32,13 @@ export default Retailers;
 
 const RetailersWrapper = styled.div`
   display: grid;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   padding: 4rem 0;
   .retail-info-container {
-    width: 85%;
     margin: auto;
     h2 {
       margin: 1rem 0;
@@ -77,9 +76,23 @@ const RetailersWrapper = styled.div`
     border-radius: 1rem;
     cursor: pointer;
   }
-  @media only screen and (max-width: 600px) {
-    height: auto;
+  @media only screen and (max-width: 5120px) {
+    margin: auto;
+    width: 40%;
+  }
+  @media only screen and (max-width: 3840px) {
+    width: 40%;
+  }
+  @media only screen and (max-width: 2560px) {
+    width: 60%;
+  }
+  @media only screen and (max-width: 1920px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 1920px) {
     width: 90%;
+  }
+  @media only screen and (max-width: 768px) {
     display: block;
     margin: auto;
     .retail-info-container {

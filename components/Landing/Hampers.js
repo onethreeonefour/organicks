@@ -33,8 +33,8 @@ function Hampers() {
           );
         })}
       </div>
-      <a href="#about" className="button">
-        Meet Organicks
+      <a href="#testimonies" className="button">
+        Testimonies
       </a>
     </HamperWrapper>
   );
@@ -85,11 +85,37 @@ const HamperWrapper = styled.div`
     border-radius: 1rem;
     cursor: pointer;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 5120px) {
+    .hamper-container {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 3840px) {
+    .hamper-container {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 2560px) {
+    .hamper-container {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 1920px) {
+    .hamper-container {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 1920px) {
+    .hamper-container {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
     .hamper-container {
       flex-direction: column;
       gap: 1.5rem;
-      width: 90%;
+
       align-items: flex-start;
       justify-content: flex-start;
       margin-top: 50px;

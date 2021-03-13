@@ -39,7 +39,7 @@ function Testimonies() {
     },
   ]);
   return (
-    <TestimoniesWrapper>
+    <TestimoniesWrapper id="testimonies">
       <div>
         <h1>Testimonies</h1>
         <p>Check out these satisfied customers choosing ORGANICKS</p>
@@ -58,7 +58,7 @@ function Testimonies() {
           <div className="gradient-flex"></div>
         </div>
       </div>
-      <h1 style={{ margin: "2rem auto" }}>Become a better you! Starting with Organicks.</h1>
+      <h1 style={{ margin: "2rem auto", padding: "0rem 0.5rem" }}>Become a better you! Starting with Organicks.</h1>
     </TestimoniesWrapper>
   );
 }
@@ -68,7 +68,7 @@ const TestimoniesWrapper = styled.div`
   display: flex;
   justify-content: center;
   background: #6046e8;
-  padding: 3rem 0;
+  padding: 3rem 0.25rem;
   color: white;
   text-align: center;
   flex-direction: column;
@@ -107,12 +107,38 @@ const TestimoniesWrapper = styled.div`
     }
   }
   .gradient-flex {
-    height: 425px;
+    height: 475px;
     width: 200px;
     right: 0;
     position: absolute;
     background: linear-gradient(90deg, rgba(61, 38, 190, 0.02), #3d26be);
+    pointer-events: none;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 5120px) {
+    .testimonies-wrapper {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 3840px) {
+    .testimonies-wrapper {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 2560px) {
+    .testimonies-wrapper {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 1920px) {
+    .testimonies-wrapper {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .testimonies-wrapper {
+      position: relative;
+      width: 90%;
+      margin: auto;
+    }
   }
 `;

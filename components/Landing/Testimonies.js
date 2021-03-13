@@ -140,5 +140,8 @@ const TestimoniesWrapper = styled.div`
       width: 90%;
       margin: auto;
     }
+    .gradient-flex {
+      display: none;
+    }
   }
 `;

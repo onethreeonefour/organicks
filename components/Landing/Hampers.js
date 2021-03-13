@@ -21,7 +21,7 @@ function Hampers() {
   return (
     <HamperWrapper id="hampers">
       <h1>Our Hampers</h1>
-      <h3>Handpicked hampers only available at selected retailers</h3>
+      <h2>Handpicked hampers only available at selected retailers</h2>
       <div className="hamper-container">
         {Hamper.map((el, index) => {
           return (

@@ -23,13 +23,13 @@ function Contact() {
         </div>
         <div className="contact-form">
           <h2>Contact Organicks</h2>
-          <form action="post">
+          <form action="#">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" />
+            <input type="text" name="name" id="name" />
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" id="email" />
             <label htmlFor="enquiry">Enquiry</label>
-            <textarea type="text" rows="8" cols="50" name="enquiry" />
+            <textarea type="text" rows="8" cols="50" name="enquiry" id="enquiry" />
             <a href="#" className="button">
               Submit
             </a>

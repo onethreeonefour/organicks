@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function Contact() {
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contact">
       <div className="contact-container">
         <div>
           <h1>About Organicks</h1>
@@ -15,21 +15,25 @@ function Contact() {
             truly want and need. <br />
             <br />
             Here at <strong>Organicks</strong> we can also set up a business relationship with any independent farmer
-            who wish to bring their products to the wider market. <br /> <br />
-            So don't delay <strong>Organicks</strong> is here to stay!
+            who wish to bring their products to the wider market.
           </p>
+          <div className="contact-team-image-container">
+            <img src="./images/team-photo.webp" alt="team" id="team-photo" />
+          </div>
         </div>
         <div className="contact-form">
-          <h2>Contact Us</h2>
-          <label htmlFor="Name">Name</label>
-          <input type="text" />
-          <label htmlFor="Name">Name</label>
-          <input type="text" />
-          <label htmlFor="Name">Enquiry</label>
-          <textarea type="text" rows="8" cols="50" />
-          <a href="#" className="button">
-            Submit
-          </a>
+          <h2>Contact Organicks</h2>
+          <form action="post">
+            <label htmlFor="Name">Name</label>
+            <input type="text" />
+            <label htmlFor="email">Email</label>
+            <input type="email" />
+            <label htmlFor="Name">Enquiry</label>
+            <textarea type="text" rows="8" cols="50" />
+            <a href="#" className="button">
+              Submit
+            </a>
+          </form>
         </div>
       </div>
     </ContactWrapper>
@@ -55,6 +59,9 @@ const ContactWrapper = styled.div`
       border-radius: 1rem;
       box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
       background: white;
+      h2 {
+        padding: 1rem 0;
+      }
     }
   }
   .button {
@@ -65,7 +72,7 @@ const ContactWrapper = styled.div`
     text-align: center;
     width: 100px;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     cursor: pointer;
   }
   input,
@@ -76,10 +83,46 @@ const ContactWrapper = styled.div`
     margin: 0.5rem 0;
     border-color: rgba(0, 0, 0, 0.25);
   }
-  @media only screen and (max-width: 600px) {
+  .contact-team-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  #team-photo {
+    border-radius: 0.5rem;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 320px;
+    margin: 2rem auto;
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 5120px) {
+    .contact-container {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 3840px) {
+    .contact-container {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 2560px) {
+    .contact-container {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 1920px) {
+    .contact-container {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .contact-container {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
     .contact-container {
       grid-template-columns: 1fr;
-      width: 90%;
       .contact-form {
         padding: 2rem;
       }

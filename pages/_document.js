@@ -30,6 +30,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charset="utf-8" />
+          <meta
+            name="description"
+            content="Organicks is a established company that brings fresh Australian fruits and vegetables from their farms to your popular all Australian popular retailers."
+          ></meta>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
           <link
